@@ -1,6 +1,4 @@
 # Phase 1 - All Practice Tasks
----
-
 
 ## Task 1: টিউশন ফি ও ডিসকাউন্ট
 
