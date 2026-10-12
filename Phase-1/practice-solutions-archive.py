@@ -12,6 +12,7 @@
 # print('Average Per Day:', averagPerDay)
 
 
+
 # ========== TASK: 2 ==========> 
 # bangla = 72
 # english = 65
@@ -25,7 +26,19 @@
 # print('Paased:',condition)
 
 
+
 # ========== TASK: 3 ==========> 
+# A = 'Milk'
+# B = 'Juice'
+# C = A
+# D = B
+# A = D
+# B = C
+# # print(C)
+# # print(D)
+# print(A)
+# print(B)
+
 
 
 # ========== TASK: 4 ==========> 
