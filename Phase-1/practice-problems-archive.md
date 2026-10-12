@@ -7,12 +7,12 @@
 
 **তোমার কাজ:** আরিফের এই তিনটা প্রশ্নের উত্তর বের করে দেখাও। কোচিংয়ের দিন, ভাড়া বা খাবারের দাম বদলালে যেন প্রোগ্রামটা সহজে বদলানো যায়।
 
-**শর্ত:** গড় খরচ `140.0` নয়, `140` হিসেবে দেখাতে হবে।
-
 **Input**
 ```
-Pocket money 2500, coaching days 12
-Rickshaw per trip 30, lunch per day 80
+Pocket money 2500 
+coaching days 12
+Rickshaw per trip 30 
+lunch per day 80
 ```
 
 **Output**
@@ -20,6 +20,8 @@ Rickshaw per trip 30, lunch per day 80
 Total spent: 1680 | Remaining: 820
 Average per day: 140
 ```
+
+**শর্ত:** গড় খরচ `140.0` নয়, `140` হিসেবে দেখাতে হবে।
 
 ---
 
@@ -52,7 +54,8 @@ Nusrat | Total: 228 | Average: 76.0 | Passed: True
 
 **Input**
 ```
-1850 4
+1850 
+4
 ```
 
 **Output**
@@ -109,7 +112,8 @@ print("a =", a, "b =", b)
 
 **Input**
 ```
-10 20
+10 
+20
 ```
 
 **Output**
@@ -248,7 +252,8 @@ print("Average:", average)
 
 **Input**
 ```
-80 65
+80 
+65
 ```
 
 **Output**
@@ -311,7 +316,8 @@ After 10 hours: 5120 bacteria
 **Input**
 ```
 Rafi
-17 1.68
+17 
+1.68
 ```
 
 **Output**
@@ -361,7 +367,8 @@ print(item + " cost: " + cost)
 
 **Input**
 ```
-60 5
+60 
+5
 ```
 
 **Output**
