@@ -62,14 +62,14 @@
 
 
 # ========== TASK: 5 ==========> 
-firstName = '     RAFI'
-lastName = 'Ahmed'
-rollNo = 21
+# firstName = '     RAFI'
+# lastName = 'Ahmed'
+# rollNo = 21
 
-studentUserName = f'{firstName}.{lastName}.{rollNo}'.replace(' ', '').lower()
-studentEmailAddress = f'{studentUserName}@school.edu'
-print('email:', studentEmailAddress)
-print('username:', studentUserName)
-print(len(studentUserName))
-print(firstName) 
+# studentUserName = f'{firstName}.{lastName}.{rollNo}'.replace(' ', '').lower()
+# studentEmailAddress = f'{studentUserName}@school.edu'
+# print('email:', studentEmailAddress)
+# print('username:', studentUserName)
+# print(len(studentUserName))
+# print(firstName) 
 
