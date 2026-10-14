@@ -76,9 +76,9 @@
 
 
 # ========== TASK: 6 ==========> 
-# error: 1
-quantity = input("কয়টা কলম: ") # input() always returns a string by default, so we have to convert it to int first. Otherwise it will stay a string, and for that in next line of code fails because quantity is still a string. 
-# fixed
-quantity = int(input("কয়টা কলম: "))
-print("তুমি পাবে", quantity * 3, "টা খাতা")
+# # error: 1
+# quantity = input("কয়টা কলম: ") # input() always returns a string by default, so we have to convert it to int first. Otherwise it will stay a string, and for that in next line of code fails because quantity is still a string. 
+# # fixed
+# quantity = int(input("কয়টা কলম: "))
+# print("তুমি পাবে", quantity * 3, "টা খাতা")
 
