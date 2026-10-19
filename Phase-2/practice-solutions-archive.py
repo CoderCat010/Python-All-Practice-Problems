@@ -14,6 +14,16 @@
 
 
 # ========== TASK: 2 ==========> 
-
-
-
+balance = int(input('Balance? ',))
+withdraw = int(input('Enter Withdraw Amount: '))
+remaining = balance - withdraw
+min_withdraw = 500
+max_withdraw = 20000
+if withdraw < min_withdraw or withdraw % 500 != 0:
+    print('Invalid amount: must be a multiple of 500 (minimum 500)')
+elif withdraw > max_withdraw:
+    print('Limit exceeded: maximum 20000 per withdrawal')
+elif withdraw > balance: 
+    print('Insufficient balance')
+else:
+    print(f'withdrawn: {withdraw}  Remaining balance: {remaining}')
