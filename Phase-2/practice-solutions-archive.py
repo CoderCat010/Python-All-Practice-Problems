@@ -41,5 +41,15 @@
 #     if i == 1:
 #         print('লিফট-অফ!')
 
+
+
+# ========== TASK: 4 ==========> 
+total_marks = 0
+count = 0
+while count < 5:
+    marks = int(input("নম্বর: "))
+    total_marks = total_marks + marks
+    print("Total:", total_marks)
+    count += 1
     
     
