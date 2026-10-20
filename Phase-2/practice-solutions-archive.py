@@ -73,20 +73,64 @@
 
 
 # ========== TASK: 6 ==========>
-students = int(input("কতজন ছাত্র: "))
-regular = 0
-fined = 0
+# students = int(input("কতজন ছাত্র: "))
+# regular = 0
+# fined = 0
+# count = 1
+# while count <= students:
+#     attendance = int(input("উপস্থিতি %: "))
+#     has_medical = input("মেডিকেল সার্টিফিকেট (yes/no): ")
+#     if attendance >= 75:
+#         print("ছাত্র", count, ": পরীক্ষায় বসতে পারবে")
+#         regular = regular + 1
+#     elif (attendance >= 60 and attendance <= 74) and has_medical == "yes":
+#         print("ছাত্র", count, ": জরিমানাসহ বসতে পারবে")
+#         fined = fined + 1
+#     else:
+#         print("ছাত্র", count, ": বসতে পারবে না")
+#     count = count + 1
+# print("সাধারণ:", regular, "| জরিমানাসহ:", fined)
+
+
+
+# ========== TASK: 7 ==========>
+
+
+
+# ========== TASK: 8 ==========>
+
+
+
+# ========== TASK: 9 ==========>
+
+
+
+# ========== TASK: 10 ==========>
+estimate_mb = 1000
+days = 7
 count = 1
-while count <= students:
-    attendance = int(input("উপস্থিতি %: "))
-    has_medical = input("মেডিকেল সার্টিফিকেট (yes/no): ")
-    if attendance >= 75:
-        print("ছাত্র", count, ": পরীক্ষায় বসতে পারবে")
-        regular = regular + 1
-    elif (attendance >= 60 and attendance <= 74) and has_medical == "yes":
-        print("ছাত্র", count, ": জরিমানাসহ বসতে পারবে")
-        fined = fined + 1
-    else:
-        print("ছাত্র", count, ": বসতে পারবে না")
-    count = count + 1
-print("সাধারণ:", regular, "| জরিমানাসহ:", fined)
+total_mb = 0
+cross_day = None
+highest_mb = 0
+highest_day = None
+
+while count <= days:
+    user_input = int(input('Enter Usage Data: '))
+    total_mb = total_mb + user_input
+    if total_mb > estimate_mb and cross_day is None:
+        cross_day = count
+        if cross_day is not None:
+            print(f"Limit ({estimate_mb} MB) cross হয়েছে দিন {cross_day}-এ")
+    if user_input > highest_mb:
+        highest_mb = user_input
+        highest_day = count
+    count += 1
+average_mb = total_mb / days
+
+if cross_day is None:
+    print(f"Limit ({estimate_mb} MB) cross হয়নি")
+else:
+    print(f"Limit ({estimate_mb} MB) cross হয়েছে দিন {cross_day}-এ")
+print(f"Total usage: {total_mb} MB")
+print(f"Highest: দিন {highest_day} ({highest_mb} MB)")
+print(f"Daily average: {average_mb:.2f} MB")
