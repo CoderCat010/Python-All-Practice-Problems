@@ -12,6 +12,7 @@
 # print('জরিমানা:', fine, 'টাকা')
 
 
+
 # ========== TASK: 2 ==========>
 # balance = int(input('Balance? ',))
 # withdraw = int(input('Enter Withdraw Amount: '))
@@ -28,6 +29,7 @@
 #     print(f'withdrawn: {withdraw}  Remaining balance: {remaining}')
 
 
+
 # ========== TASK: 3 ==========>
 # i = 6
 # while i > 1:
@@ -40,6 +42,7 @@
 #         print('লিফট-অফ!')
 
 
+
 # ========== TASK: 4 ==========>
 # total_marks = 0
 # count = 0
@@ -50,18 +53,41 @@
 # print("Total:", total_marks)
 
 
+
 # ========== TASK: 5 ==========>
-rightPin = 4829
+# rightPin = 4829
+# count = 1
+# while count <= 3:
+#     userPin = int(input("Enter Your Pin: "))
+#     if userPin != rightPin and count == 1:
+#         print("ভুল পিন। আর 2 বার চেষ্টা করতে পারবে।")
+#     elif userPin != rightPin and count == 2:
+#         print("ভুল পিন। আর 1 বার চেষ্টা করতে পারবে।")
+#     elif userPin != rightPin and count == 3:
+#         print("ভুল পিন। আর চেষ্টা করতে পারবেন না।")
+#         break
+#     else:
+#         print("স্বাগতম!")
+#     count += 1
+
+
+
+# ========== TASK: 6 ==========>
+students = int(input("How many students: "))
+regular = 0
+fined = 0
 count = 1
-while count <= 3:
-    userPin = int(input("Enter Your Pin: "))
-    if userPin != rightPin and count == 1:
-        print("ভুল পিন। আর 2 বার চেষ্টা করতে পারবে।")
-    elif userPin != rightPin and count == 2:
-        print("ভুল পিন। আর 1 বার চেষ্টা করতে পারবে।")
-    elif userPin != rightPin and count == 3:
-        print("ভুল পিন। আর চেষ্টা করতে পারবেন না।")
-        break
+while count <= students:
+    attendance = int(input("Attendance %: "))
+    has_medical = input("Medical certificate (yes/no): ")
+    if attendance >= 75:
+        print("Student", count, ": Can sit for the exam")
+        regular = regular + 1
+    elif (attendance >= 60 and attendance <= 74) and has_medical ==  "yes":
+        print("Student", count, ": Can sit with a fine")
+        fined = fined + 1
     else:
-        print("স্বাগতম!")
-    count += 1
+        print("Student", count, ": Cannot sit for the exam")
+    count = count + 1
+print("Regular:", regular, "| Fined:", fined)
+
