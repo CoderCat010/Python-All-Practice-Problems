@@ -73,21 +73,20 @@
 
 
 # ========== TASK: 6 ==========>
-students = int(input("How many students: "))
+students = int(input("কতজন ছাত্র: "))
 regular = 0
 fined = 0
 count = 1
 while count <= students:
-    attendance = int(input("Attendance %: "))
-    has_medical = input("Medical certificate (yes/no): ")
+    attendance = int(input("উপস্থিতি %: "))
+    has_medical = input("মেডিকেল সার্টিফিকেট (yes/no): ")
     if attendance >= 75:
-        print("Student", count, ": Can sit for the exam")
+        print("ছাত্র", count, ": পরীক্ষায় বসতে পারবে")
         regular = regular + 1
-    elif (attendance >= 60 and attendance <= 74) and has_medical ==  "yes":
-        print("Student", count, ": Can sit with a fine")
+    elif (attendance >= 60 and attendance <= 74) and has_medical == "yes":
+        print("ছাত্র", count, ": জরিমানাসহ বসতে পারবে")
         fined = fined + 1
     else:
-        print("Student", count, ": Cannot sit for the exam")
+        print("ছাত্র", count, ": বসতে পারবে না")
     count = count + 1
-print("Regular:", regular, "| Fined:", fined)
-
+print("সাধারণ:", regular, "| জরিমানাসহ:", fined)
